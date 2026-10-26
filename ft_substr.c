@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 10:14:58 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/10/25 15:15:58 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/10/26 17:04:12 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,13 +23,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	slen = ft_strlen(s);
 	if (start >= slen)
-		return (strdup(""));
+		return (ft_strdup(""));
 	if (len > slen - start)
 		len = slen - start;
 	arr = malloc(len + 1);
+	if (!arr)
+		return (NULL);
 	i = start;
 	j = 0;
-	while(i < start + len)
+	while (i < start + len)
 	{
 		arr[j] = s[i];
 		i++;
