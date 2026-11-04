@@ -6,11 +6,11 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 17:09:25 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/10/24 19:11:35 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/01 19:23:27 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 char	*ft_strchr(const char *s, int c)
 {

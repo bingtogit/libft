@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 17:06:11 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/10/28 10:44:13 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/01 19:31:16 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,10 +85,8 @@ static char	**all_str(char *s, char c)
 		while (s[end] != c && s[end])
 			end++;
 		arr[j] = ft_substr(s, i, (end - i));
-		if (!ft_substr(s, i, (end - i)))
-			freekolchi(arr, j);
 		if (!arr[j])
-			return (NULL);
+			return(freekolchi(arr, j));
 		j++;
 	}
 	arr[j] = NULL;

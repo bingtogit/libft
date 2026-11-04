@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 10:14:58 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/10/26 17:04:12 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/04 16:00:48 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int i;
-	unsigned int j;
-	char *arr;
-	size_t slen;
+	unsigned int	i;
+	unsigned int	j;
+	char			*arr;
+	size_t			slen;
 
 	if (!s)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 18:56:17 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/10/26 14:02:26 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/02 22:59:17 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,6 @@ void	static *ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char *c;
 	size_t i;
 
+	
 	
 }
