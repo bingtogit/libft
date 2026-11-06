@@ -6,52 +6,34 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:35:02 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/04 20:09:44 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/06 20:12:37 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	add_node(t_list **first, t_list **last, void *content)
-{
-	t_list	*ptr;
-
-	ptr = ft_lstnew(content);
-	if (!ptr)
-		return (0);
-	if (!*first)
-	{
-		*first = ptr;
-		*last = ptr;
-	}
-	else
-	{
-		(*last)->next = ptr;
-		*last = ptr;
-	}
-	return (1);
-}
-
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*first;
-	t_list	*last;
+	t_list	*p;
+	t_list	*ptr;
 	void	*content;
 
-	first = NULL;
-	last = NULL;
-	if (!lst || !f)
+	p = NULL;
+	if (!lst || !f || !del)
 		return (NULL);
 	while (lst)
 	{
-		content = f(lst->content);
-		if (!add_node(&first, &last, content))
+		content = lst->content;
+		ptr = ft_lstnew(f(content));
+		if (!ptr)
 		{
-			del(content);
-			ft_lstclear(&first, del);
+			ft_lstclear(&p, del);
 			return (NULL);
 		}
+		if (!p)
+			p = ptr;
+		ft_lstadd_back(&p, ptr);
 		lst = lst->next;
 	}
-	return (first);
+	return (p);
 }

@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 10:56:44 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/04 16:05:40 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/05 11:59:04 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ static char	*fill(char *s, long n)
 
 char	*ft_itoa(int n)
 {
-	char *arr;
+	char	*arr;
 
 	arr = malloc(count((long)n) + 1);
 	if (!arr)

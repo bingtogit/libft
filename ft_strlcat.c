@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 21:12:38 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/10/18 14:03:58 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/05 13:01:58 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,13 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t i;
-	size_t j;
-	size_t srclen;
+	size_t	i;
+	size_t	j;
+	size_t	srclen;
 
 	j = 0;
 	i = 0;
 	srclen = ft_strlen(src);
-
 	while (i < size && dst[i])
 		i++;
 	if (i == size)

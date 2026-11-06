@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/26 17:06:11 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/01 19:31:16 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/06 21:19:07 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,7 @@ static char	**all_arr(char *s, char c)
 		return (NULL);
 	return (arr);
 }
+
 static char	**freekolchi(char **arr, int j)
 {
 	if (!arr[j])
@@ -62,19 +63,16 @@ static char	**freekolchi(char **arr, int j)
 	}
 	return (arr);
 }
-static char	**all_str(char *s, char c)
+
+static char	**all_str(char *s, char c, char **arr)
 {
-	int		i;
-	int		j;
-	int		end;
-	char	**arr;
+	int	i;
+	int	j;
+	int	end;
 
 	i = 0;
 	end = 0;
 	j = 0;
-	arr = all_arr(s, c);
-	if (!arr)
-		return (NULL);
 	while (s[end])
 	{
 		while (s[end] == c && s[end])
@@ -86,18 +84,21 @@ static char	**all_str(char *s, char c)
 			end++;
 		arr[j] = ft_substr(s, i, (end - i));
 		if (!arr[j])
-			return(freekolchi(arr, j));
+			return (freekolchi(arr, j));
 		j++;
 	}
 	arr[j] = NULL;
 	return (arr);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;
 
 	if (!s)
 		return (NULL);
-	arr = all_str((char *)s, c);
-	return (arr);
+	arr = all_arr((char *)s, c);
+	if (!arr)
+		return (NULL);
+	return (all_str((char *)s, c, arr));
 }

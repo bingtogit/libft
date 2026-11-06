@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 05:32:05 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/01 23:12:46 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/05 12:06:10 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-        if (!s)
-                return ;
-        ft_putstr_fd(s, fd);
-        write(fd, "\n", 1);
+	if (!s)
+		return ;
+	ft_putstr_fd(s, fd);
+	write(fd, "\n", 1);
 }

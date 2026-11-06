@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 19:29:20 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/04 16:06:07 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/06 21:10:51 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int i;
-	int sign;
-	int result;
+	int	i;
+	int	sign;
+	int	result;
 
 	i = 0;
 	sign = 1;
@@ -36,3 +36,10 @@ int	ft_atoi(const char *nptr)
 	}
 	return (result * sign);
 }
+// #include <stdio.h>
+
+// int main()
+// {
+// 	int	s = ft_atoi("-2147483649");
+// 	printf("%d", s);
+// }

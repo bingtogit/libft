@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/24 15:13:01 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/10/29 18:26:59 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/05 13:01:25 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strdup(const char *s)
 {
-	size_t i;
-	char *copy;
+	size_t	i;
+	char	*copy;
 
 	i = ft_strlen(s);
 	copy = malloc(i + 1);

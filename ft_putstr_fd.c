@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 05:27:17 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/10/31 05:30:45 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/05 12:06:17 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int     i;
+	int	i;
 
 	if (!s)
 		return ;

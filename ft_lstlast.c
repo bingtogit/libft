@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 14:33:46 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/03 14:49:10 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/05 13:05:06 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list	*ft_lstlast(t_list *lst)
 		return (NULL);
 	while (lst->next != NULL)
 	{
-                lst = lst->next;
+		lst = lst->next;
 	}
-        return(lst);
+	return (lst);
 }

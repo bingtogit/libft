@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 14:13:57 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/04 16:05:59 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/05 11:58:38 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-        ft_memset(s, 0, n);
+	ft_memset(s, 0, n);
 }

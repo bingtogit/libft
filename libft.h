@@ -6,14 +6,13 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 15:06:21 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/04 20:26:01 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/06 22:35:20 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <fcntl.h>
 # include <stdlib.h>
 # include <unistd.h>
 
