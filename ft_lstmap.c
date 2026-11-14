@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/04 16:35:02 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/07 16:06:31 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/10 17:37:43 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,9 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		}
 		if (!p)
 			p = ptr;
-		ft_lstadd_back(&p, ptr);
+		else
+			ft_lstadd_back(&p, ptr);
 		lst = lst->next;
 	}
 	return (p);
-}
-int main()
-{
-	
 }

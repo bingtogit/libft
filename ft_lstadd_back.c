@@ -6,7 +6,7 @@
 /*   By: aakhiyat <aakhiyat@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 14:50:07 by aakhiyat          #+#    #+#             */
-/*   Updated: 2026/11/05 13:05:54 by aakhiyat         ###   ########.fr       */
+/*   Updated: 2026/11/09 22:57:36 by aakhiyat         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	while (p->next != NULL)
 		p = p->next;
 	p->next = new;
-	new->next = NULL;
 }

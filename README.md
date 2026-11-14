@@ -52,26 +52,6 @@ make
 | `make fclean` | Removes object files and `libft.a`. |
 | `make re` | Recompiles the library from scratch. |
 
-### Using the Library
-
-Include the header in your C source file:
-
-```c
-#include "libft.h"
-```
-
-Compile your program with the library:
-
-```bash
-cc main.c -L. -lft -o program
-```
-
-Run the program:
-
-```bash
-./program
-```
-
 ## Functions
 
 ### Part 1 — Libc Functions
